@@ -3,21 +3,21 @@ version: 2.1
 workflows:
  version: 2 
  build:
-	jobs:
-		build:
-			filters:
-				branches:
-					only: 
-						main:
+jobs:
+build:
+filters:
+branches:
+only: 
+main:
 
 jobs:
-	build:
-	working-directory: ~ExampleApplication
-	docker:
-		image: circleci/node: 10.12.3
-	steps:
-		checkout:
-		run:
+build:
+working-directory: ~ExampleApplication
+docker:
+image: circleci/node: 10.12.3
+steps:
+checkout:
+run:
 			name: update-npm
 			command: 'npm install -g npm@5'
 		restore_cache

@@ -35,8 +35,8 @@ jobs:
           key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
             - ./node_modules
-			name: update-npm
-			command: 'npm install -g npm@5'
+		name: update-npm
+		command: 'npm install -g npm@5'
 		restore_cache
 		key: dependency-cache-{{ checksum "package-lock.json"}}
 		run:

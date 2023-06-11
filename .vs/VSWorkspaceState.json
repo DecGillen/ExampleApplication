@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.circleci",
+    "\\bin",
+    "\\modules",
+    "\\public",
+    "\\routes",
+    "\\test",
+    "\\views"
+  ],
+  "SelectedNode": "\\bin\\www",
+  "PreviewInSolutionExplorer": false
+}

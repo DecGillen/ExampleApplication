@@ -6,9 +6,9 @@ workflows:
  Jobs:
   build:
    filters:
-    branches:
-	only: 
-	main:
+  branches:
+    only: 
+    main:
 
 jobs:
  build:

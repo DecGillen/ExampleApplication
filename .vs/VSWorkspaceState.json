@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\.circleci",
-    "\\bin"
+    ""
   ],
-  "SelectedNode": "\\package-lock.json",
+  "SelectedNode": "\\.circleci",
   "PreviewInSolutionExplorer": false
 }

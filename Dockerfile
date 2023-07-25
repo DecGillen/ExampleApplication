@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM circleci/node:10.16.3
-ENV NOVE_ENV=production
+ENV NODE_ENV=production
 COPY ["package.json", "package-lock.json*", "./"]
 RUN sudo npm install
 COPY . .

@@ -4,5 +4,6 @@
     "\\.circleci",
     "\\bin"
   ],
+  "SelectedNode": "\\.dockerignore",
   "PreviewInSolutionExplorer": false
 }

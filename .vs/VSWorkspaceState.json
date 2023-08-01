@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\.circleci",
-    "\\bin"
+    "\\bin",
+    "\\modules",
+    "\\public",
+    "\\routes",
+    "\\test",
+    "\\views"
   ],
-  "SelectedNode": "\\.dockerignore",
+  "SelectedNode": "\\bin\\www",
   "PreviewInSolutionExplorer": false
 }

@@ -56,8 +56,9 @@ jobs:
     docker:
       - image: circleci/node:10.16.3
     steps:
-      - run: run-zap-scan-against-container
-      - command: CONTAINER_IP=$(docker inspect integration_app --format='{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'); docker run -t owasp/zap2docker-stable zap-baseline.py -t https://$CONTAINER_IP:8443/math/add -P 8443
+      - run: 
+          name: zap-scan-against-container
+          command: CONTAINER_IP=$(docker inspect integration_app --format='{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'); docker run -t owasp/zap2docker-stable zap-baseline.py -t https://$CONTAINER_IP:8443/math/add -P 8443
          
 
 
